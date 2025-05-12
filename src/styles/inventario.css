@@ -1,0 +1,103 @@
+/* src/styles/inventario.css */
+
+.inventario-container {
+  padding: 2rem;
+  background-color: #f0f3f7;
+  min-height: 100vh;
+}
+
+.inventario-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.inventario-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.inventario-form select,
+.inventario-form input {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.inventario-form button {
+  grid-column: span 2;
+  padding: 0.8rem;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.inventario-form button:hover {
+  background-color: #219150;
+}
+
+.inventario-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.inventario-buttons button {
+  padding: 0.7rem 1.2rem;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+}
+
+.inventario-buttons button:hover {
+  background-color: #1f6392;
+}
+
+.mensaje-info {
+  text-align: center;
+  color: green;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.inventario-list {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.inventario-card {
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  width: 29%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inventario-card h3 {
+  color: #34495e;
+  margin-bottom: 0.4rem;
+}
+
+.inventario-card p {
+  margin: 0.3rem 0;
+  color: #555;
+}

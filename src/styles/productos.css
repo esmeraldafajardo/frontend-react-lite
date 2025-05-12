@@ -1,0 +1,93 @@
+/* src/styles/productos.css */
+
+.productos-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.productos-container h2 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 2rem;
+}
+
+.producto-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.producto-form input {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.producto-form button {
+  grid-column: span 2;
+  padding: 0.8rem;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.producto-form button:hover {
+  background-color: #219150;
+}
+
+.productos-list {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.producto-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 29%;
+}
+
+.producto-card:hover {
+  transform: translateY(-4px);
+}
+
+.producto-card h3 {
+  color: #27ae60;
+  margin-bottom: 0.5rem;
+}
+
+.producto-card p {
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+.delete-btn {
+  margin-top: 1rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
